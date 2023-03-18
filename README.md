@@ -1,2 +1,3 @@
 # CanaKuroReact
 - with Vite
+.
