@@ -24,3 +24,5 @@ dist-ssr
 /dist/*
 /src/*.css
 /src/*.css.map
+/src/scss/*.css
+/src/scss/*.css.map
