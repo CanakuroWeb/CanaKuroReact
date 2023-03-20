@@ -4,6 +4,10 @@
 # About this project
 - This project is to improve developing skills in the web domain and applying new technologies.
 
+# Before Install this Project 
+- you need install this :
+SASS  to convert Scss to Css
+
 # How to contribute this project
 1. clone this project.
 2. And then, open the shell CLI in your route , then Execute...
