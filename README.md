@@ -16,4 +16,5 @@
    npm run dev
    ```
 5. then editing code and check and commit!
-- Not need build : building is executing by Github Action!
+# **There is no need build!**
+- Build page is automatically executing by Github Action!
