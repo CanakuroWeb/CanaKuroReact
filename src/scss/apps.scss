@@ -111,4 +111,31 @@
       background-color: #f9f9f9;
     }
   }
-  
+
+.cat{
+  display: flex;
+  flex-direction: row;
+}
+
+#card {
+  padding: var(--amuguna);
+  background-color: aliceblue;
+  color: #131415;
+  border-radius: 15px;
+}
+
+#card:hover {
+  animation-name: irum;
+  animation-duration: 0.5s;
+  transform: scale(1.1);
+}
+
+@keyframes irum {
+  from {transform: scale(1)}
+  to {opacity: 1; transform: scale(1.1)}
+}
+
+body {
+  --amuguna: 5px
+
+}
