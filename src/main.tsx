@@ -1,9 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import Todo_board from "./component/Todo/todo_board";
+import {Provider} from "react-redux";
+import {store} from "./variable/store";
+import Todo_input from "./component/Todo/todo_input";
+import './App.css' //하나에 다크모드를 둘에 넣자
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <React.StrictMode>
+        <div className="App">
+            <Provider store={store}>
+                <Todo_input/>
+                <Todo_board/>
+            </Provider>
+        </div>
+    </React.StrictMode>,
 )

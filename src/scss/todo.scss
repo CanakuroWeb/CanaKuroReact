@@ -1,0 +1,49 @@
+.todo__item{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    max-width: 800px;
+    justify-content: space-between;
+    padding: 3px;
+    animation: cardon 1s 1;
+    background-color: #131313;
+}
+
+.todo__text{
+
+}
+.todo__button{
+
+}
+.todo__writter{
+    display: inline;
+}
+.todo-display{
+    background-color: rgba($color: #131313, $alpha: 1.0) ;
+}
+.todo__remove{
+    animation: todo__remove__ani 1s 1; 
+    // 사실 여기보단, TS에 저장하는게 더 수정하는 측면에서는 좋을 수 있다고 생각해두자.
+}
+@keyframes cardon{
+    from{
+        //transform: matrix(1,0,0,0,0,0);
+        transform : rotate(90deg);
+    }
+    to{
+        transform : rotate(0deg);
+        //transform: matrix(0,0,0,0,0,0); 
+        //TODO : matrix 계산해서 오자. 귀찮긴 한데.
+    }
+}
+@keyframes todo__remove__ani {
+    from{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0.6;// 정비례는 아님 ㅇㅇ
+    }
+    to{
+        opacity: 0;
+    }
+}
