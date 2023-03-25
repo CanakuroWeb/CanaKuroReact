@@ -4,6 +4,7 @@ export type Todo = {
     date: string, // TODO: 날짜표현방법 검색하기
     message: string,
     doneMark: boolean,
+    killing:boolean, // Animation용이에용
 }
 
 export type TodoInputForm = {

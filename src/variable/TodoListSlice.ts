@@ -21,7 +21,8 @@ export const TodoListSlice = createSlice({
                 ...action.payload,
                 id: state.TodoData.nextID,
                 doneMark: false,
-                date: new Date().toDateString()
+                date: new Date().toDateString(),
+                killing: false
             })
             state.TodoData.nextID += 1
         },
@@ -40,8 +41,14 @@ export const TodoListSlice = createSlice({
                 message: action.payload.message
             } : todo)
         },
+        deleteSignalTodo: (state, action: PayloadAction<number>) => {
+            state.TodoData.todoList = state.TodoData.todoList.map((todo) => todo.id === action.payload ? {
+                ...todo,
+                killing: true
+            } : todo)
+        },
     }
 })
 
-export const {addTodo, deleteTodo, markTodo, editTodo} = TodoListSlice.actions
+export const {addTodo, deleteTodo, markTodo, editTodo, deleteSignalTodo} = TodoListSlice.actions
 export default TodoListSlice.reducer
