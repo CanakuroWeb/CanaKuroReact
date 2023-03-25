@@ -12,9 +12,10 @@ function Todo_board() {
             <ul>
                 {todoList.getTodoList.TodoData.todoList.map((todo) => {
                     return (<li key={todo.id}>
-                        <p>[{todo.member}]{todo.message}</p>
-                        <p onClick={() => dispatch(deleteTodo(todo.id))}>삭제</p>
-                        <p onClick={() => dispatch(markTodo({id: todo.id, mark: true}))}>완료</p>
+                        <span
+                            style={todo.doneMark ? {textDecorationLine: "line-through"} : {}}>[{todo.member}]{todo.message}</span>
+                        <button onClick={() => dispatch(deleteTodo(todo.id))}>삭제</button>
+                        <button onClick={() => dispatch(markTodo({id: todo.id, mark: !todo.doneMark}))}>완료</button>
                     </li>)
                 })}
             </ul>

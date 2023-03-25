@@ -33,9 +33,15 @@ export const TodoListSlice = createSlice({
                 ...todo,
                 doneMark: action.payload.mark
             } : todo)
-        }
+        },
+        editTodo: (state, action: PayloadAction<{ id: number, message: string }>) => {
+            state.TodoData.todoList = state.TodoData.todoList.map((todo) => todo.id === action.payload.id ? {
+                ...todo,
+                message: action.payload.message
+            } : todo)
+        },
     }
 })
 
-export const {addTodo, deleteTodo, markTodo} = TodoListSlice.actions
+export const {addTodo, deleteTodo, markTodo, editTodo} = TodoListSlice.actions
 export default TodoListSlice.reducer
