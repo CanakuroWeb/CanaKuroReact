@@ -1,0 +1,69 @@
+{
+  "nextID": 8,
+  "todoList": [
+    {
+      "id": 0,
+      "member": "KuroVine9",
+      "date": "03/26/2023",
+      "message": "테스트 메시지 1",
+      "doneMark": false,
+      "killing": false
+    },
+    {
+      "id": 1,
+      "member": "LuticaCANARD",
+      "date": "03/26/2023",
+      "message": "테스트 메시지 2",
+      "doneMark": false,
+      "killing": false
+    },
+    {
+      "id": 2,
+      "member": "Manya",
+      "date": "03/26/2023",
+      "message": "테스트 메시지 3",
+      "doneMark": true,
+      "killing": false
+    },
+    {
+      "id": 3,
+      "member": "백체",
+      "date": "03/26/2023",
+      "message": "집에가고싶다",
+      "doneMark": false,
+      "killing": false
+    },
+    {
+      "id": 4,
+      "member": "눈여우",
+      "date": "03/26/2023",
+      "message": "테스트 메시지 4",
+      "doneMark": true,
+      "killing": false
+    },
+    {
+      "id": 5,
+      "member": "KuroVine9",
+      "date": "03/26/2023",
+      "message": "쓸것도없네",
+      "doneMark": false,
+      "killing": false
+    },
+    {
+      "id": 6,
+      "member": "KuroVine9",
+      "date": "03/26/2023",
+      "message": "휴학하기",
+      "doneMark": true,
+      "killing": false
+    },
+    {
+      "id": 7,
+      "member": "KuroVine9",
+      "date": "03/26/2023",
+      "message": "지금듣는노래 flos",
+      "doneMark": false,
+      "killing": false
+    }
+  ]
+}
