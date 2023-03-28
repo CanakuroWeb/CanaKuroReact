@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import { store } from "./variable/store";
 import Todo_input from "./component/Todo/todo_input";
 import "./App.css";
-import Ws_test from "./ws_test";
+import Chatbox from "./component/Chat/chatbox";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <Provider store={store}>
         <Todo_input />
         <Todo_board />
-        <Ws_test />
+        <Chatbox />
       </Provider>
     </div>
   </React.StrictMode>,
